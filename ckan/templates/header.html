@@ -82,10 +82,12 @@
 
       {% block header_logo %}
         {% if g.site_logo %}
-          <a class="logo" href="{{ h.url_for('home') }}"><img src="{{ h.url_for_static_or_external(g.site_logo) }}" alt="{{ g.site_title }}" title="{{ g.site_title }}" /></a>
+          <!--<a class="logo" href="{{ h.url_for('home') }}"><img src="{{ h.url_for_static_or_external(g.site_logo) }}" alt="{{ g.site_title }}" title="{{ g.site_title }}" /></a>-->
+          <a class="logo" href="http://www.datavalue.cloud"><img src="{{ h.url_for_static_or_external(g.site_logo) }}" alt="{{ g.site_title }}" title="{{ g.site_title }}" /></a>
         {% else %}
           <h1>
-            <a href="{{ h.url_for('home') }}">{{ g.site_title }}</a>
+            <!--<a href="{{ h.url_for('home') }}">{{ g.site_title }}</a>-->
+            <a href="www.datavalue.cloud">{{ g.site_title }}</a>
           </h1>
           {% if g.site_description %}<h2>{{ g.site_description }}</h2>{% endif %}
         {% endif %}
@@ -94,7 +96,7 @@
     </hgroup>
 
     <div class="nav-collapse collapse">
-
+<!--
       {% block header_site_navigation %}
         <nav class="section navigation">
           <ul class="nav nav-pills">
@@ -109,6 +111,7 @@
           </ul>
         </nav>
       {% endblock %}
+      -->
 
       {% block header_site_search %}
         <form class="section site-search simple-input" action="{% url_for controller='package', action='search' %}" method="get">

@@ -1,5 +1,7 @@
 {% set current_url = h.full_current_url() %}
+
 {% block social %}
+<!--
   <section class="module module-narrow social">
     {% block social_title %}
       <h2 class="module-heading"><i class="fa fa-medium fa-share-square-o"></i> {{ _('Social') }}</h2>
@@ -12,4 +14,26 @@
       </ul>
     {% endblock %}
   </section>
+  -->
+  <section class="weibo">
+
+      <h2 class="module-heading"><i class="fa fa-medium fa-share-square-o"></i> {{ _('Social') }}</h2>
+  
+
+      <ul class="nav weibo">
+        <li class="nav-item"><a href="javascript:share.weibo();"><i class="weibo"></i>分享到微博</a></li>
+      </ul>
+
+  </section>
+  <script src="../simple-share.js/build/simple-share.min.js"></script>
+<script>
+
+var share = new SimpleShare({
+  url: '',
+  title:'', 
+  content: '这个数据很有趣，一起来探索下',
+  pic: ''
+});
+
+</script>  
 {% endblock %}
