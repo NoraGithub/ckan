@@ -1,3 +1,4 @@
+version:2.6.1
 在盘符`/data1`，用[dpkg安装ckan](http://docs.ckan.org/en/latest/maintaining/installing/install-from-package.html)
 帐号：ckan_default
 密码：ckan_default
